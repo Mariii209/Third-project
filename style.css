@@ -158,6 +158,10 @@ footer p {
   footer .logos {
     margin: 15px 0;
   }
+
+  .first-row {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 767px) {
