@@ -3,6 +3,9 @@
   box-sizing: border-box;
 }
 
+body {
+}
+
 :root {
   --midnightblue: #272142;
 }
@@ -19,6 +22,11 @@ p {
 }
 
 header .nav-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +65,7 @@ header .overlay {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 47px;
+  padding-top: 125px;
   padding-bottom: 46px;
   color: #fff;
 }
@@ -140,13 +148,32 @@ footer p {
   }
 
   header .nav-section ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+
+  header .nav-section li {
+    padding: 20px 0;
+  }
+
+  #check:checked ~ .nav-section ul {
+    height: 280px;
   }
 }
 
 @media (max-width: 875px) {
   footer {
-    height: 170px;
+    height: 150px;
   }
 
   footer .footers-child {
