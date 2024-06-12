@@ -264,6 +264,10 @@ footer p {
   .follow-me {
     justify-content: center;
   }
+  .about-shelley {
+    margin-left: 0;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -276,9 +280,6 @@ footer p {
     margin: 0 auto;
   }
 
-  .about-shelley {
-    margin-left: 20px;
-  }
   .about-shelley h2 {
     margin: 15px 0 32px;
     font-size: 40px;
